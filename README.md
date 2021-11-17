@@ -1,0 +1,1 @@
+App that takes the screen shot of a part of a screen or full screen to share with your friends or to save it.
