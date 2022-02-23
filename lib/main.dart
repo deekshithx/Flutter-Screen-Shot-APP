@@ -93,3 +93,17 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+ AnimatedSwitcher(
+                          reverseDuration: const Duration(milliseconds: 0),
+                          duration: const Duration(milliseconds: 300),
+                          transitionBuilder: (child, animation) =>
+                              SlideTransition(
+                            position: Tween<Offset>(
+                                    begin: const Offset(0, 1),
+                                    end: const Offset(0, 0))
+                                .animate(animation),
+                            child: child,
+                          ),
+                          child: selectedConnector == ''
+                              ? ChildOne:ChildTwo))
